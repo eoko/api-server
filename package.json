@@ -1,0 +1,19 @@
+{
+  "name": "@eoko/api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@eoko/api-utils": "^1.0.0",
+    "mongoose": "latest",
+    "restify": "latest",
+    "winston": "latest",
+    "winston-sentry": "latest"
+  }
+}
