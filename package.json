@@ -2,7 +2,7 @@
   "name": "@eoko/api-server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index‡.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -11,7 +11,12 @@
   "license": "ISC",
   "dependencies": {
     "@eoko/api-utils": "^1.0.0",
+    "@eoko/server-utils": "^1.0.1",
+    "@eoko/service-registry": "^1.0.0",
+    "debug": "latest",
     "mongoose": "latest",
+    "raven": "latest",
+    "requestretry": "^1.12.0",
     "restify": "latest",
     "winston": "latest",
     "winston-sentry": "latest"
