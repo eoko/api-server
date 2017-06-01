@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@eoko/api-utils": "^1.0.1",
+    "@eoko/api-utils": "^1.0.2",
     "debug": "latest"
   },
   "peerDependencies": {
