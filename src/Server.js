@@ -3,6 +3,7 @@ const debug = require('debug')('microservice');
 const restify     = require('restify');
 const groupParser = require('@eoko/api-utils').Handlers.groupParser;
 const authParser  = require('@eoko/api-utils').Handlers.authParser;
+const pagination  = require('@eoko/api-utils').Handlers.pagination;
 
 const internalServerError = require('./middleware/internalServerError');
 const validationError     = require('./middleware/validationError');
@@ -64,6 +65,9 @@ class Server {
 
     debug(`server use auth parser`);
     this.server.use(authParser);
+
+    debug(`server use pagination`);
+    this.server.use(pagination);
   }
 
   /**
